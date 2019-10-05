@@ -11,9 +11,6 @@ Please do this at your own risk.
 
 ```
 deb-src http://archive.ubuntu.com/ubuntu bionic main restricted #Added by software-properties
-deb-src http://jp.archive.ubuntu.com/ubuntu/ bionic restricted main multiverse universe
-deb-src http://jp.archive.ubuntu.com/ubuntu/ bionic-updates restricted main multiverse universe
-deb-src http://jp.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
 deb-src http://security.ubuntu.com/ubuntu bionic-security restricted main multiverse universe
 ```
 
@@ -33,28 +30,21 @@ $ git clone https://github.com/marevol/linux-5.3-xps_13_2in1.git
 $ cd linux-5.3-xps_13_2in1
 ```
 
-2. Configure settings.
-
-```
-$ cp /boot/config-`uname -r` .config
-$ make oldconfig
-```
-
-3. Build a linux kernel.
+2. Build a linux kernel.
 
 ```
 $ sudo -s
 # make-kpkg -j 8 --rootcmd fakeroot --initrd --append_to_version=-xps --revision=001 kernel_image kernel_headers
 ```
 
-4. Install deb packages.
+3. Install deb packages.
 
 ```
 # cd ..
 # dpkg -i linux-headers-5.3.2-xps_001_amd64.deb linux-image-5.3.2-xps_001_amd64.deb 
 ```
 
-5. Reboot
+4. Reboot
 
 ## References
 
