@@ -34,7 +34,7 @@ $ cd linux-5.3-xps_13_2in1
 
 ```
 $ sudo -s
-# make-kpkg -j 8 --rootcmd fakeroot --initrd --append_to_version=-xps --revision=001 kernel_image kernel_headers
+# make-kpkg -j `nproc` --rootcmd fakeroot --initrd --append_to_version=-xps --revision=001 kernel_image kernel_headers
 ```
 
 3. Install deb packages.
