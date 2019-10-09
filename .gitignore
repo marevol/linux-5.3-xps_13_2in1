@@ -90,7 +90,6 @@ modules.builtin
 !.gitattributes
 !.gitignore
 !.mailmap
-!.config
 
 #
 # Generated include files
