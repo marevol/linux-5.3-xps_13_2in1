@@ -1,9 +1,9 @@
 # Linux Kernel 5.3 for Dell XPS 13 2 in 1
 
-This repository is for My Ubuntu 18.04 environment :)
+This repository is for My Ubuntu 19.10 environment :)
 Please do this at your own risk.
 
-## Build DEB Package for Ubuntu 18.04
+## Build DEB Package for Ubuntu 19.10
 
 ### Setup
 
@@ -41,7 +41,7 @@ $ sudo -s
 
 ```
 # cd ..
-# dpkg -i linux-headers-5.3.2-xps_001_amd64.deb linux-image-5.3.2-xps_001_amd64.deb 
+# dpkg -i linux-headers-5.3*.deb linux-image-5.3*.deb
 ```
 
 4. Reboot
